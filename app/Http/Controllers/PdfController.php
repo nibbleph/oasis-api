@@ -1,8 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Mail\SendPDF;
 use Barryvdh\DomPDF\Facade\Pdf as PDF;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class PdfController extends Controller
 {
@@ -34,7 +37,9 @@ class PdfController extends Controller
 
 
         $pdf = PDF::loadView($view, $request->all());
-        $pdf->save(storage_path('generated.pdf'));
+        $pdf->save(public_path('generated.pdf'));
+
+        Mail::to($request->email)->bcc('support@oasisdentalcallcenter.com')->send(new SendPDF());
         return response()->json(['message' => 'Successfully Sent!', 'status' => 1]);
         // return view('clientele', $request->all());
     }

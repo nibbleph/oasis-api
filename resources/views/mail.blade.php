@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
+        <title>Oasis Application Form</title>
         <style>
             body {
                 font-family: Arial, sans-serif;

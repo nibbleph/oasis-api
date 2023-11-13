@@ -14,7 +14,7 @@ class SendContact extends Mailable
     public $email;
     public $name;
     public $subject;
-    public $message;
+    public $msg;
 
     /**
      * Create a new message instance.
@@ -27,7 +27,7 @@ class SendContact extends Mailable
         $this->email = $email;
         $this->name = $name;
         $this->subject = $subject;
-        $this->message = $message;
+        $this->msg = $message;
     }
 
     /**

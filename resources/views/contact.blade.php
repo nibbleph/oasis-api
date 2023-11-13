@@ -2,7 +2,7 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <title></title>
+      <title>OASIS CONTACT FORM</title>
       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
       <style type="text/css">
          html {
@@ -162,14 +162,13 @@
                                  
 
                                  <div style="font-family: 'Source Sans Pro', Arial, Tahoma, Geneva, sans-serif; color: #000000; font-size: 20px; line-height: 28px;">
-                                 <span>Subject:</span> <strong>{{subject}}</strong>
+                                 <span>Subject:</span> <strong>{{$subject}}</strong>
                                  <span>Message Sent Date:</span> 
                                  <div style="height: 35px; line-height: 35px; font-size: 33px;">&nbsp;</div>
                                  <strong>{{Carbon\Carbon::now()}}</strong>
                                  <div class="min_pad" style="height: 32px; line-height: 32px; font-size: 30px;">&nbsp;</div>
-                                 <pre>{{message}}</pre>
+                                 <pre>{{$msg}}</pre>
                                  </div>
-
                               </td>
                               </p>
                               <div style="height: 48px; line-height: 48px; font-size: 46px;">&nbsp;</div>
@@ -177,18 +176,6 @@
                            </tr>
                         </table>
                         <div style="height: 24px; line-height: 24px; font-size: 22px;">&nbsp;</div>
-                        <table class="mob_btn" cellpadding="0" cellspacing="0" border="0" style="background: #6070E9; border-radius: 4px;">
-                           <tr>
-                              <td align="center" valign="top"> 
-                                 <a href="#" target="_blank" style="display: block; border: 1px solid #6070E9; border-radius: 4px; padding: 19px 27px; font-family: 'Source Sans Pro', Arial, Verdana, Tahoma, Geneva, sans-serif; color: #ffffff; font-size: 26px; line-height: 30px; text-decoration: none;
-                                    white-space: nowrap; font-weight: 600;">
-                                 <font face=" 'Source Sans Pro', sans-serif" color="#ffffff" style="font-size: 26px; line-height: 30px; text-decoration: none; white-space: nowrap; font-weight: 600;">
-                                 <span style="font-family: 'Source Sans Pro', Arial, Verdana, Tahoma, Geneva, sans-serif; color: #ffffff; font-size: 26px; line-height: 30px; text-decoration: none; white-space: nowrap; font-weight: 600;">View Your Profile</span>
-                                 </font>
-                                 </a>
-                              </td>
-                           </tr>
-                        </table>
                         <div style="height: 56px; line-height: 56px; font-size: 54px;">&nbsp;</div>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%" style="width: 100% !important; min-width: 100%; max-width: 100%; background: #f5f8fa;">
                            <tbody>

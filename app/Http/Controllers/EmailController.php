@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\SendForm;
+use App\Mail\SendContact;
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\Pdf as PDF;
 use Illuminate\Support\Facades\Mail;
@@ -43,10 +44,7 @@ class EmailController extends Controller
             'subject' => 'required|string',
             'message' => 'required|string'
         ]);
-
-
         Mail::to($request->email)->bcc('support@oasisdentalcallcenter.com')->send(new SendContact($request->email, $request->name, $request->subject, $request->message));
-
         return response()->json(['message' => 'Successfully Sent!', 'status' => 1]);
     }
 }

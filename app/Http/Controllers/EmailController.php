@@ -33,4 +33,20 @@ class EmailController extends Controller
         return response()->json(['message' => 'Successfully Sent!', 'status' => 1]);
         // return view('clientele', $request->all());
     }
+
+    public function send_contact(Request $request)
+    {
+        //
+        $request->validate([
+            'name' => 'required|string',
+            'email' => 'required|email',
+            'subject' => 'required|string',
+            'message' => 'required|string'
+        ]);
+
+
+        Mail::to($request->email)->bcc('support@oasisdentalcallcenter.com')->send(new SendContact($request->email, $request->name, $request->subject, $request->message));
+
+        return response()->json(['message' => 'Successfully Sent!', 'status' => 1]);
+    }
 }

@@ -28,7 +28,7 @@ class SendForm extends Mailable
      */
     public function build()
     {
-        return $this->view('mail')->attach(public_path('generated.pdf', ). [
+        return $this->view('mail')->attach(public_path('generated.pdf', ), [
             'as' => 'form.pdf',
             'mime' => 'application/pdf'
         ]);

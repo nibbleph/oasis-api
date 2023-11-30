@@ -47,4 +47,11 @@ class EmailController extends Controller
         Mail::to($request->email)->bcc('support@oasisdentalcallcenter.com')->send(new SendContact($request->email, $request->name, $request->subject, $request->message));
         return response()->json(['message' => 'Successfully Sent!', 'status' => 1]);
     }
+
+    public function send_form(Request $request){
+        $pdf = PDF::loadView('insurance', $request->all());
+        $pdf->save(public_path('generated.pdf'));
+        Mail::to($request->email)->bcc('support@oasisdentalcallcenter.com')->send(new SendForm());
+        return response()->json(['message' => 'Successfully Sent!', 'status' => 1]);
+    }
 }

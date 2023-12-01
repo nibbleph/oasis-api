@@ -24,3 +24,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/generate-pdf', [EmailController::class, 'store']);
 Route::post('/contact', [EmailController::class, 'send_contact']);
 Route::post('/get-started', [EmailController::class, 'send_form']);
+Route::post('/pricing-form', [EmailController::class, 'send_pricing']);

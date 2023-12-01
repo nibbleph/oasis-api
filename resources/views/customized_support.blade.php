@@ -26,17 +26,18 @@
             </h4>
         </center>
 
-        <p><span style="font-weight: bold">PRACTICE NAME:</span> {{$practice_name}}</p>
-        <p><span style="font-weight: bold">Provider's Name:</span> {{$providers_name ?? $provider_name}} Email Address: {{$email}}</p>
-        <p><span style="font-weight: bold">Provider's Contact Number: (Phone)</span> {{$tel_number}} &nbsp; &nbsp; &nbsp; <span style="font-weight: bold">(Mobile)</span> {{$mobile_number}}</p>
-        <p><span style="font-weight: bold">Tax Number:</span> {{$tax_number}} <span style="font-weight: bold">NPI Number:</span> {{$npi_number}} <span style="font-weight: bold"> License Number:</span> {{$license_number}}</p>
-        <p><span style="font-weight: bold">Clinic Address:</span> {{$clinic_address}}</p>
+        <p><span style="font-weight: bold">PRACTICE NAME:</span> {{$name_of_the_practice}}</p>
+        <p><span style="font-weight: bold">Provider's Name:</span> {{$provider_name}} 
+        <span style="font-weight: bold">Email Address:</span> {{$email}}</p>
+        <p><span style="font-weight: bold">Provider's Contact Number: (Phone)</span> {{$phone_number}} &nbsp; &nbsp; &nbsp;
+        <p><span style="font-weight: bold">Clinic Address:</span> {{$dental_clinic_address}}</p>
         <p style="text-decoration: underline; font-weight: bold">
             CONTACT PERSON (Dedicated Person to Communicate)
         </p>
         <p>
-            <span style="font-weight: bold">Name: </span> {{$contact_person_name}}<span style="font-weight: bold"> Email Address: </span> {{$contact_person_email}}
-            <span style="font-weight: bold">Contact Number:</span> {{$contact_person_number}}
+            <span style="font-weight: bold">Name: </span> {{$contact_name}}
+            <span style="font-weight: bold">Email Address: </span> {{$email_address}}
+            <span style="font-weight: bold">Contact Number:</span> {{$phone_number}}
         </p>
         <p>
             <span style="font-weight: bold">PRACTICE MANAGEMENT SOFTWARE:  &nbsp;&nbsp;</span>{{$practice_management_software}}
@@ -47,13 +48,12 @@
             <span style="font-weight: bold">PHONE SYSTEM</span>
         </p>
 
-        <p><span style="font-weight: bold">INTERNET UPLOAD SPEED: </span> &nbsp; <span style="font-weight: bold">INTERNET DOWNLOAD SPEED: </span></p> -->
-        <p><span style="font-weight: bold">APPROXIMATE NUMBER OF PATIENTS PER DAY:</span></p>
-        <p><span style="font-weight: bold">NUMBER OF OPERATORY DOCTORS PER DAY:</span> &nbsp;<span style="font-weight: bold">NUMBER OF HYGIENISTS PER DAY:</span></p>
-        <p><span style="font-weight: bold">APPROXIMATE NUMBER OF NEW PATIENTS PER MONTH:</span></p>
-        <p><span style="font-weight: bold">TYPE OF PATIENT INSURANCE: </span> {{implode(', ', $type_of_patient_insurance)}}</p>
+        <p><span style="font-weight: bold">INTERNET UPLOAD SPEED: {{$internet_upload_speed}}</span> &nbsp; <span style="font-weight: bold">INTERNET DOWNLOAD SPEED: {{$download_speed}}</span></p>
+        <p><span style="font-weight: bold">APPROXIMATE NUMBER OF PATIENTS PER DAY: {{$approximate_number_of_patients_per_day}}</span></p>
+        <p><span style="font-weight: bold">NUMBER OF OPERATORY DOCTORS PER DAY:</span> &nbsp;<span style="font-weight: bold">NUMBER OF HYGIENISTS PER DAY: {{$number_of_per_hygienist_per_day}}</span></p>
+        <p><span style="font-weight: bold">APPROXIMATE NUMBER OF NEW PATIENTS PER MONTH: {{$approximate_number_of_new_patients_per_month}}</span></p>
         <p><span style="font-weight: bold">CLINICAL HOURS AND DAY:</span> {{implode(', ', $clinical_hours_and_day)}}</p>
-        <p><span style="font-weight: bold">Desired date to start service:</span></p>
+        <p><span style="font-weight: bold">DENTAL INSURANCE ACCEPTED:</span> {{implode(', ', $type_of_dental_insurance_accepted)}}</p>
 
         </br>
         </br>

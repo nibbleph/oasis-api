@@ -56,6 +56,13 @@ class EmailController extends Controller
     }
 
     public function send_pricing(Request $request){
+        $pdf = PDF::loadView('pricing_form', $request->all());
+        $pdf->save(public_path('generated.pdf'));
+        Mail::to($request->email)->bcc('support@oasisdentalcallcenter.com')->send(new SendForm());
+        return response()->json(['message' => 'Successfully Sent!', 'status' => 1]);
+    }
+
+    public function send_support(Request $request){
         $pdf = PDF::loadView('customized_support', $request->all());
         $pdf->save(public_path('generated.pdf'));
         Mail::to($request->email)->bcc('support@oasisdentalcallcenter.com')->send(new SendForm());

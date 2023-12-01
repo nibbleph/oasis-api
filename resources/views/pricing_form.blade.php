@@ -50,19 +50,11 @@
 
         <p><span style="font-weight: bold">INTERNET UPLOAD SPEED: {{$internet_upload_speed}}</span> &nbsp; <span style="font-weight: bold">INTERNET DOWNLOAD SPEED: {{$download_speed}}</span></p>
         <p><span style="font-weight: bold">APPROXIMATE NUMBER OF PATIENTS PER DAY: {{$approximate_number_of_patients_per_day}}</span></p>
-        <p><span style="font-weight: bold">APPROXIMATE NUMBER OF PATIENTS PER MONTH: {{$approximate_number_of_new_patients_per_month}}</span></p>
-        <p><span style="font-weight: bold">NUMBER OF OPERATORY DOCTORS PER DAY:</span>{{$number_of_per_doctor_per_day}} &nbsp;<span style="font-weight: bold">NUMBER OF HYGIENISTS PER DAY: {{$number_of_per_hygienist_per_day}}</span></p>
-        <p><span style="font-weight: bold">NUMBER OF ADMINISTRATIVE SUPPORT PER DAY:</span> {{$number_of_per_administrative_support_per_day}} &nbsp;
+        <p><span style="font-weight: bold">NUMBER OF OPERATORY DOCTORS PER DAY:</span> &nbsp;<span style="font-weight: bold">NUMBER OF HYGIENISTS PER DAY: {{$number_of_per_hygienist_per_day}}</span></p>
         <p><span style="font-weight: bold">APPROXIMATE NUMBER OF NEW PATIENTS PER MONTH: {{$approximate_number_of_new_patients_per_month}}</span></p>
         <p><span style="font-weight: bold">CLINICAL HOURS AND DAY:</span> {{implode(', ', $clinical_hours_and_day)}}</p>
         <p><span style="font-weight: bold">DENTAL INSURANCE ACCEPTED:</span> {{implode(', ', $type_of_dental_insurance_accepted)}}</p>
 
-
-        <p><span style="font-weight: bold">BILLER:</span> {{$biller}}</p>
-        <p><span style="font-weight: bold">VERIFIER:</span> {{$verifier}}</p>
-        <p><span style="font-weight: bold">FRONT DESK:</span> {{$front_desk}}</p>
-        <p><span style="font-weight: bold">TREATMENT COORDINATOR:</span> {{$treatment_coordinator}}</p>
-        <p><span style="font-weight: bold">TREATMENT MANAGE:</span> {{$treatment_manager}}</p>
         </br>
         </br>
         </br>

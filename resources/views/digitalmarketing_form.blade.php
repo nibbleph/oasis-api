@@ -25,30 +25,38 @@
                 {{$title}} FORM
             </h4>
         </center>
-        <p style="text-decoration: underline; font-weight: bold">
-            PROVIDER/PRACTICE
+
+        <p>
+            <span style="font-weight: bold">Name: </span> {{$name}}
         </p>
-        <p><span style="font-weight: bold">NAME OF THE PRACTICE:</span>&nbsp; {{$name_of_the_practice}}</p>
-        <p><span style="font-weight: bold">Clinic Address</span> &nbsp; {{$clinic_address}}</p>
-        <p><span style="font-weight: bold">Owner’s Name:</span> &nbsp; {{$owners_name}}</p>
-        <p><span style="font-weight: bold">Email Address:</span> &nbsp; {{$owners_email_address}}</p>
-        <p><span style="font-weight: bold">Provider's Contact Number: (Phone)</span> {{$providers_contact_phone_number}} &nbsp; &nbsp; &nbsp; <span style="font-weight: bold">(Mobile)</span> {{$mobile_number}}</p>
-        <p><span style="font-weight: bold">Desired outcome:</span> &nbsp; {{$desired_income}}</p>
-        </br>
+        <p>
+        <span style="font-weight: bold">Email Address: </span> {{$email}}
+        </p>
+        <p>
+        <span style="font-weight: bold">Contact Number:</span> {{$contact_number}}
+        </p>
+        <p>
+            <span style="font-weight: bold">Company Name:  &nbsp;&nbsp;</span>{{$company_name}}
+        </p>
+
+        <p>
+            <span style="font-weight: bold">Marketing Details</span>
+        </p>
+
+        <p><span style="font-weight: bold">POSSIBLE SERVICES NEEDED:</span> {{implode(', ', $possible_service_needed ?? [])}}</p>
+        <p><span style="font-weight: bold">MARKETING GOALS:</span> {{implode(', ', $marketing_goals ?? [])}}</p>
+        <!-- </br>
         </br>
         <p>
             <span style="font-weight: bold">REFFERAL</span>
         </p>
         <p><span style="font-weight: bold">REFFERER NAME:</span> {{$name_referrer ?? ''}}</p>
         <p><span style="font-weight: bold">REFFERER EMAIL:</span> {{$email_referrer ?? ''}}</p>
-        <p><span style="font-weight: bold">REFFERER CONTACT:</span> {{$contact_number_referrer ?? ''}}</p>
+        <p><span style="font-weight: bold">REFFERER CONTACT:</span> {{$contact_number_referrer ?? ''}}</p> -->
         </br>
         </br>
         </br>
         <p style="font-weight: bold">OASIS DENTAL CALL CENTER CONTACT INFORMATION</p>
-        <p>WEBSITE: www.oasisdentalcallcenter.com</p>
-        <p>EMAIL: JOEGABUCAN@PROTONMAIL.COM </p>
-        <p>PHONE: (408) 307‐2633 </p>
-        <p>OFFICE HOURS: MONDAY TO SATURDAY 8AM – 6PM (CALIFORNIA TIME)   </p>       
+        <p>OFFICE HOURS: MONDAY TO SATURDAY 8AM – 6PM (PH TIME)   </p>       
     </body>
 </html>

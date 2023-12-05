@@ -54,7 +54,14 @@
         <p><span style="font-weight: bold">TYPE OF PATIENT INSURANCE: </span> {{implode(', ', $type_of_patient_insurance)}}</p>
         <p><span style="font-weight: bold">CLINICAL HOURS AND DAY:</span> {{implode(', ', $clinical_hours_and_day)}}</p>
         <p><span style="font-weight: bold">Desired date to start service:</span></p>
-
+        </br>
+        </br>
+        <p>
+            <span style="font-weight: bold">REFFERAL</span>
+        </p>
+        <p><span style="font-weight: bold">REFFERER NAME:</span> {{$name_referrer ?? ''}}</p>
+        <p><span style="font-weight: bold">REFFERER EMAIL:</span> {{$email_referrer ?? ''}}</p>
+        <p><span style="font-weight: bold">REFFERER CONTACT:</span> {{$contact_number_referrer ?? ''}}</p>
         </br>
         </br>
         </br>

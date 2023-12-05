@@ -33,7 +33,14 @@
         <p><span style="font-weight: bold">Practice Address</span> &nbsp; {{$address_of_practice}}</p>
         <p><span style="font-weight: bold">Phone Number</span> &nbsp; {{$phone_number}}</p>
         <p><span style="font-weight: bold">Dental Practice Type</span> &nbsp; {{$type_of_dental_practice}}</p>
-
+        </br>
+        </br>
+        <p>
+            <span style="font-weight: bold">REFFERAL</span>
+        </p>
+        <p><span style="font-weight: bold">REFFERER NAME:</span> {{$name_referrer ?? ''}}</p>
+        <p><span style="font-weight: bold">REFFERER EMAIL:</span> {{$email_referrer ?? ''}}</p>
+        <p><span style="font-weight: bold">REFFERER CONTACT:</span> {{$contact_number_referrer ?? ''}}</p>
         </br>
         </br>
         </br>

@@ -48,10 +48,10 @@
             <span style="font-weight: bold">Project Details</span>
         </p>
 
-        <p><span style="font-weight: bold">Project Description: {{$project_description}}</span></p>
+        <p><span style="font-weight: bold">Project Description: </span>{{$project_description}}</p>
         </br>
         </br>
-        <p><span style="font-weight: bold">Project Budger: {{$budget}}</span></p>
+        <p><span style="font-weight: bold">Project Budget: </span>{{$budget}}</p>
 
         <!-- </br>
         </br>

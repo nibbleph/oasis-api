@@ -28,12 +28,14 @@
         <p style="text-decoration: underline; font-weight: bold">
             PROVIDER/PRACTICE
         </p>
-        <p><span style="font-weight: bold">NAME OF THE PRACTICE:</span>&nbsp; {{$name_of_the_practice}}</p>
-        <p><span style="font-weight: bold">Contact Name</span> &nbsp; {{$contact_name}}</p>
-        <p><span style="font-weight: bold">Practice Address</span> &nbsp; {{$address_of_practice}}</p>
-        <p><span style="font-weight: bold">Phone Number</span> &nbsp; {{$phone_number}}</p>
-        <p><span style="font-weight: bold">Dental Practice Type</span> &nbsp; {{$type_of_dental_practice}}</p>
-        </br>
+        <p><span style="font-weight: bold">CONTACT NAME: </span> &nbsp; {{$contact_name}}</p>
+        <p><span style="font-weight: bold">EMAIL: </span> &nbsp; {{$contact_name}}</p>
+        <p><span style="font-weight: bold">PHONE NUMBER: </span> &nbsp; {{$phone_number}}</p>
+        <p><span style="font-weight: bold">TYPE OF DENTAL PRACTICE: </span> &nbsp; {{$type_of_dental_practice}}</p>
+        <p><span style="font-weight: bold">NAME OF PRACTICE:</span>&nbsp; {{$name_of_the_practice}}</p>
+        <p><span style="font-weight: bold">ADDRESS OF PRACTICE</span> &nbsp; {{$address_of_practice}}</p>
+        
+        <!-- </br>
         </br>
         <p>
             <span style="font-weight: bold">REFFERAL</span>
@@ -41,7 +43,7 @@
         <p><span style="font-weight: bold">REFFERER NAME:</span> {{$name_referrer ?? ''}}</p>
         <p><span style="font-weight: bold">REFFERER EMAIL:</span> {{$email_referrer ?? ''}}</p>
         <p><span style="font-weight: bold">REFFERER CONTACT:</span> {{$contact_number_referrer ?? ''}}</p>
-        </br>
+        </br> -->
         </br>
         </br>
         <p style="font-weight: bold">OASIS DENTAL CALL CENTER CONTACT INFORMATION</p>

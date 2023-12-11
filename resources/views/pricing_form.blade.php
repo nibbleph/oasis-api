@@ -27,7 +27,7 @@
         </center>
 
         <p><span style="font-weight: bold">PRACTICE NAME:</span> {{$name_of_the_practice}}</p>
-        <p><span style="font-weight: bold">Provider's Name:</span> {{$provider_name}} 
+        <!-- <p><span style="font-weight: bold">Provider's Name:</span> {{$provider_name ?? ''}}  -->
         <span style="font-weight: bold">Email Address:</span> {{$email}}</p>
         <p><span style="font-weight: bold">Provider's Contact Number: (Phone)</span> {{$phone_number}} &nbsp; &nbsp; &nbsp;
         <p><span style="font-weight: bold">Clinic Address:</span> {{$dental_clinic_address}}</p>
@@ -50,10 +50,12 @@
 
         <p><span style="font-weight: bold">INTERNET UPLOAD SPEED: {{$internet_upload_speed}}</span> &nbsp; <span style="font-weight: bold">INTERNET DOWNLOAD SPEED: {{$download_speed}}</span></p>
         <p><span style="font-weight: bold">APPROXIMATE NUMBER OF PATIENTS PER DAY: {{$approximate_number_of_patients_per_day}}</span></p>
-        <p><span style="font-weight: bold">NUMBER OF OPERATORY DOCTORS PER DAY:</span> &nbsp;<span style="font-weight: bold">NUMBER OF HYGIENISTS PER DAY: {{$number_of_per_hygienist_per_day}}</span></p>
+        <p><span style="font-weight: bold">NUMBER OF OPERATORY DOCTORS PER DAY:</span> &nbsp;<span style="font-weight: bold">NUMBER OF HYGIENISTS PER DAY: {{$number_of_hygienist_per_day}}</span></p>
+        <p><span style="font-weight: bold">NUMBER OF DOCTOR PER DAY:</span> {{ $number_of_doctor_per_day ?? '' }}</p>
         <p><span style="font-weight: bold">APPROXIMATE NUMBER OF NEW PATIENTS PER MONTH: {{$approximate_number_of_new_patients_per_month}}</span></p>
         <p><span style="font-weight: bold">CLINICAL HOURS AND DAY:</span> {{implode(', ', $clinical_hours_and_day)}}</p>
         <p><span style="font-weight: bold">DENTAL INSURANCE ACCEPTED:</span> {{implode(', ', $type_of_dental_insurance_accepted)}}</p>
+        
         </br>
         </br>
         <p>

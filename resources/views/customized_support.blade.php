@@ -25,44 +25,63 @@
                 {{$title}} FORM
             </h4>
         </center>
-
-        <p><span style="font-weight: bold">PRACTICE NAME:</span> {{$name_of_the_practice}}</p>
-        <p><span style="font-weight: bold">Provider's Name:</span> {{$provider_name}} 
-        <span style="font-weight: bold">Email Address:</span> {{$email}}</p>
-        <p><span style="font-weight: bold">Provider's Contact Number: (Phone)</span> {{$phone_number}} &nbsp; &nbsp; &nbsp;
-        <p><span style="font-weight: bold">Clinic Address:</span> {{$dental_clinic_address}}</p>
         <p style="text-decoration: underline; font-weight: bold">
-            CONTACT PERSON (Dedicated Person to Communicate)
+            BASIC PROVIDER DETAILS
         </p>
-        <p>
-            <span style="font-weight: bold">Name: </span> {{$contact_name}}
-            <span style="font-weight: bold">Email Address: </span> {{$email_address}}
-            <span style="font-weight: bold">Contact Number:</span> {{$phone_number}}
+        <p><span style="font-weight: bold">TYPE OF DENTAL PRACTICE:&nbsp; &nbsp; </span> {{$type_of_dental_practice}}</p>
+        <p><span style="font-weight: bold">NAME OF THE PRACTICE:&nbsp; &nbsp; </span> {{$name_of_the_practice}} 
+        <span style="font-weight: bold">PROVIDER'S NAME:&nbsp; &nbsp; </span> {{$provider_name}}</p>
+        <p><span style="font-weight: bold">EMAIL ADDRESS: &nbsp; &nbsp; </span> {{$email_address}} &nbsp; &nbsp; &nbsp;
+        </br>
+        </br>
+        <p style="text-decoration: underline; font-weight: bold">
+            PRACTICE MANAGEMENT DETAILS
         </p>
-        <p>
-            <span style="font-weight: bold">PRACTICE MANAGEMENT SOFTWARE:  &nbsp;&nbsp;</span>{{$practice_management_software}}
-            
-        </p>
+        <p><span style="font-weight: bold">PRACTICE MANAGEMENT SOFTWARE:  &nbsp;&nbsp;</span>{{$practice_management_software}}</p>
+        <p><span style="font-weight: bold">PRACTICE PHONE SYSTEM: &nbsp;&nbsp;</span>{{$practice_phone_system}}</p>
+        <p><span style="font-weight: bold">INTERNET UPLOAD SPEED: &nbsp; &nbsp; </span> &nbsp; {{$internet_upload_speed}}</p>
+        <p><span style="font-weight: bold">INTERNET DOWNLOAD SPEED: &nbsp; &nbsp; </span>{{$download_speed}}</p>
 
-        <p>
-            <span style="font-weight: bold">PHONE SYSTEM</span>
+        </br>
+        </br>
+        <p style="text-decoration: underline; font-weight: bold">
+            DENTAL INSURANCE DETAILS
         </p>
-
-        <p><span style="font-weight: bold">INTERNET UPLOAD SPEED: {{$internet_upload_speed}}</span> &nbsp; <span style="font-weight: bold">INTERNET DOWNLOAD SPEED: {{$download_speed}}</span></p>
+        <p><span style="font-weight: bold">DENTAL INSURANCE ACCEPTED:</span> {{implode(', ', $type_of_dental_insurance_accepted)}}</p>
+        <p><span style="font-weight: bold">CLINICAL HOURS AND DAY:</span> {{implode(', ', $clinical_hours_and_day)}}</p>
+        </br>
+        </br>
+        <p style="text-decoration: underline; font-weight: bold">
+            APPROXIMATE NUMBERS PER
+        </p>
         <p><span style="font-weight: bold">APPROXIMATE NUMBER OF PATIENTS PER DAY: {{$approximate_number_of_patients_per_day}}</span></p>
         <p><span style="font-weight: bold">APPROXIMATE NUMBER OF PATIENTS PER MONTH: {{$approximate_number_of_new_patients_per_month}}</span></p>
-        <p><span style="font-weight: bold">NUMBER OF OPERATORY DOCTORS PER DAY:</span>{{$number_of_per_doctor_per_day ?? ''}} &nbsp;<span style="font-weight: bold">NUMBER OF HYGIENISTS PER DAY: {{$number_of_per_hygienist_per_day}}</span></p>
-        <p><span style="font-weight: bold">NUMBER OF ADMINISTRATIVE SUPPORT PER DAY:</span> {{$number_of_per_administrative_support_per_day ?? ''}} &nbsp;
-        <p><span style="font-weight: bold">APPROXIMATE NUMBER OF NEW PATIENTS PER MONTH: {{$approximate_number_of_new_patients_per_month}}</span></p>
-        <p><span style="font-weight: bold">CLINICAL HOURS AND DAY:</span> {{implode(', ', $clinical_hours_and_day)}}</p>
-        <p><span style="font-weight: bold">DENTAL INSURANCE ACCEPTED:</span> {{implode(', ', $type_of_dental_insurance_accepted)}}</p>
+        <p><span style="font-weight: bold">NUMBER OF DOCTORS PER DAY:</span>{{$number_of_doctor_per_day ?? ''}} </p>
+        <p><span style="font-weight: bold">NUMBER OF HYGENIST PER DAY:</span> {{$number_of_hygenist_per_day ?? ''}} &nbsp;
+        <p><span style="font-weight: bold">NUMBER OF OPERATOR PER DAY:</span> {{$number_of_operator_per_day ?? ''}} &nbsp;
+        <p><span style="font-weight: bold">HYBRID FUNCTIONS: {{$hybrid_function}}</span></p>
+        </br>
+        </br>
+        <p style="text-decoration: underline; font-weight: bold">
+            NUMBER OF ADMINISTRATIVE SUPPORT
+        </p>
 
 
-        <p><span style="font-weight: bold">BILLER:</span> {{$biller ?? ''}}</p>
-        <p><span style="font-weight: bold">VERIFIER:</span> {{$verifier}}</p>
-        <p><span style="font-weight: bold">FRONT DESK:</span> {{$front_desk}}</p>
-        <p><span style="font-weight: bold">TREATMENT COORDINATOR:</span> {{$treatment_coordinator}}</p>
-        <p><span style="font-weight: bold">TREATMENT MANAGE:</span> {{$treatment_manager}}</p>
+        <p><span style="font-weight: bold">NUMBER OF BILLER:</span> {{$biller ?? ''}}</p>
+        <p><span style="font-weight: bold">NUMBER OF FRONT DESK:</span> {{$front_desk}}</p>
+        <p><span style="font-weight: bold">NUMBER OF VERIFIER:</span> {{$verifier}}</p>
+        <p><span style="font-weight: bold">NUMBER OF TREATMENT COORDINATOR:</span> {{$treatment_coordinator}}</p>
+        <p><span style="font-weight: bold">NUMBER OF TREATMENT MANAGE:</span> {{$treatment_manager}}</p>
+        </br>
+        </br>
+        <p>
+            <span style="font-weight: bold">CONTACT INFO</span>
+        </p>
+        <p><span style="font-weight: bold">DESIRED DATE TO START SERVICE:</span> {{date("m-d-Y", strtotime($desired_date_to_start_service))}}</p>
+        <p><span style="font-weight: bold">DESIRED SERVICE:</span> {{date("m-d-Y", strtotime($desired_date_service))}}</p>
+        <p><span style="font-weight: bold">CONTACT NAME:</span> {{$contact_name}}</p>
+        <p><span style="font-weight: bold">EMAIL:</span> {{$email}}</p>
+        <p><span style="font-weight: bold">PHONE NUMBER:</span> {{$phone_number}}</p>
         </br>
         </br>
         <p>
